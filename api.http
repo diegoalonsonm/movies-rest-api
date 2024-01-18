@@ -5,7 +5,7 @@ GET http://localhost:1234/movies
 GET http://localhost:1234/movies/7d2832f8-c70a-410e-8963-4c93bf36cc9c
 
 ### recuperar peliculas por genero
-GET http://localhost:1234/movies?genre=adventure
+GET http://localhost:1234/movies?genre=Crime
 
 ### crear una pelicula
 POST http://localhost:1234/movies
@@ -26,10 +26,13 @@ Content-Type: application/json
     "rate": 9.1
 }
 
+### eliminar una pelicula
+DELETE http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
 ### actualizar una pelicula
 PATCH http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
 Content-Type: application/json
 
 {
-    "year": 1994
+    "year": 1993
 }
