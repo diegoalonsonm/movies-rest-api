@@ -1,7 +1,8 @@
 import { readJSON } from "../utils.js"
 import { randomUUID } from 'node:crypto'
 
-const movies = readJSON('../movies.json')
+// const movies = readJSON('../movies.json')
+const movies = readJSON('./movies.json')
 
 export class MovieModel {
     // recuperar todas las peliculas

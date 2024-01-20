@@ -3,7 +3,7 @@ import z from 'zod'
 const movieSchema = z.object({
     title: z.string({invalid_type_error: 'Title must be a string', required_error: 'Title is required'}),
     genre: z.array(z.enum(
-            ['Action', 'Adventure', 'Crime', 'Drama', 'Animation', 'Biography', 'Fantasy', 'Romance', 'Sci-Fi']
+            ['Action', 'Adventure', 'Crime', 'Drama', 'Animation', 'Biography', 'Fantasy', 'Romance', 'Sci-Fi', 'Music', 'Comedy']
         )).min(1, {message: 'Genre must have at least one valid value'}),
     year: z.number().int().min(1900).max(2025),
     director: z.string(),
